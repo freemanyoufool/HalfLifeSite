@@ -32,7 +32,7 @@ header{
     background: linear-gradient(180deg, #FE7E4F 0%, #FF6515 100%);
     padding:0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .logo{
     width:87px;
@@ -54,6 +54,9 @@ header{
 }
 main{
     background-image: url(images/hlbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
     padding-top:41px;
     padding-left:38px;
     padding-bottom:92px;
@@ -102,6 +105,7 @@ footer{
     display:flex;
     justify-content:space-between;
 }
+
 .greetings{
     width:645px;
     height:365px;
@@ -157,13 +161,15 @@ footer{
 }
 .rightfirst{
     margin-left:19px;
-    margin-right:34px
+}
+.rightfirst2{
+    margin-left:19px;
 }
 .footerright{
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .footerleft{
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .headerhl{
     display:flex;
@@ -173,6 +179,10 @@ footer{
     display:flex;
     height:40px;
     padding-top:30px;
+    margin-right:10px;
+}
+.hl1and2{
+    flex-direction:row
 }
 .settings{
     display:block;
@@ -200,6 +210,11 @@ footer{
 .iconhide{
     opacity:0%;
 }
+
+.bx-wrapper {
+    width: 775px;
+}
+
 @media(max-width:1731px){
     .headerhl{
         margin-right:30%;
@@ -252,6 +267,14 @@ footer{
     .hl1inf{
         font-size:21px;
     }
+    .hl1img{
+        height:65px;
+        padding-top:12px;
+    }
+    .hl2{
+        height:25px;
+        padding-top:35px;
+    }
 }
 @media(max-width: 1201px){
     .hl1inf{
@@ -272,5 +295,41 @@ footer{
     }
     .flex{
         flex-direction: column;
+    }
+}
+@media(max-width: 867px){
+    .leftfirst{
+        font-size:10px;
+    }
+    .leftbetween{
+        font-size:10px;
+    }
+    .rightfirst{
+        font-size:10px;
+        margin-left:20px;
+    }
+    .rightfirst2{
+        margin-left:0px;
+        margin-right:0px;
+        font-size:10px;
+    }
+    .footerstuff21{
+        display:flex;
+        justify-content:space-between;
+    }
+    .rightbetween{
+        font-size:10px;
+    }
+    .last{
+        font-size:10px;
+    }
+    .rovno{
+        font-size:10px;
+        margin-left:64px;
+    }
+}
+@media(max-width: 393px){
+    .logos{
+        flex-direction: row;
     }
 }
